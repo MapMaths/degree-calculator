@@ -15,14 +15,17 @@
   </head>
   <body>
     <h1>Degree Calculator</h1>
-    <form oninput="add.value">
+    <form oninput="add.value = parseInt(1) + parseInt(2)">
       <input type="number" id="adddega" value="0" />°
       <input type="number" id="addmina" value="0" />′
       <input type="number" id="addseca" value="0" />″+
       <input type="number" id="adddegb" value="0" />°
       <input type="number" id="addminb" value="0" />′
       <input type="number" id="addsecb" value="0" />″=
-      <output name="add" for="adddega addmina addseca adddegb addminb addsecb"></output>
+      <output
+        name="add"
+        for="adddega addmina addseca adddegb addminb addsecb"
+      ></output>
     </form>
 
     <!-- include the Glitch button to show what the webpage is about and
