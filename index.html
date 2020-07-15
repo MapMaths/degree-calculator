@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Degree Calculator</title>
-    
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
     <h1>Degree Calculator</h1>
-    <form oninput="">
-      <input type="number" id="adddega" value="0">°
-      <input type="number" id="addmina" value="0">′
-      <input type="number" id="addseca" value="0">″+
-      <output></output>
+    <form oninput="add.value">
+      <input type="number" id="adddega" value="0" />°
+      <input type="number" id="addmina" value="0" />′
+      <input type="number" id="addseca" value="0" />″+
+      <input type="number" id="adddegb" value="0" />°
+      <input type="number" id="addminb" value="0" />′
+      <input type="number" id="addsecb" value="0" />″=
+      <output name="add" for="adddega addmina addseca adddegb addminb addsecb"></output>
     </form>
 
     <!-- include the Glitch button to show what the webpage is about and
