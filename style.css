@@ -9,3 +9,6 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
+input {
+  width: 3%;
+}
