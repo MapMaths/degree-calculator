@@ -13,3 +13,10 @@ input {
   width: 50px;
   border-radius: 7px;
 }
+
+#result {
+  border: inset;
+  background-color: white;
+  border-radius: 7px;
+  width: 50px;
+}
