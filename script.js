@@ -24,11 +24,14 @@ function degAdd() {
 }
 function writeDeg(wd, wm, ws) {
   if (ws == 0) {
-    if(wm==0){
-      if(wd==0){
-        return "0°"
+    //second's value is 0
+    if (wm == 0) {
+      //both second and minute's values are 0
+      if (wd == 0) {
+        //all values are 0
+        return "0°";
       }
+    } else {
     }
-    else{}
   }
 }
