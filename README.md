@@ -1,4 +1,4 @@
-# Welcome to Glitch
+# Welcome to Degree Calculator
 
 This is a Degree Calculator, with an HTML file.
 Input your degrees and do the calculatings.
