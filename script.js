@@ -1,6 +1,3 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
 function degAdd() {
   var addDeg =
     document.getElementById("addDegA") + document.getElementById("addDegB");
@@ -21,7 +18,9 @@ function degAdd() {
     addMin,
     addSec
   );
+  console.log(addDeg + addMin + addSec);
 }
+
 function writeDeg(wd, wm, ws) {
   var outwrite;
   if (ws == 0) {
@@ -36,7 +35,10 @@ function writeDeg(wd, wm, ws) {
         outwrite = wd + "°";
       }
     } else {
+      //only second's value is 0
+      outwrite = wd + "°" + wm + "′";
     }
   }
+  console.log(outwrite + wm + ws);
   return outwrite;
 }
