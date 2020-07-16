@@ -24,6 +24,7 @@ function degAdd() {
 }
 
 function writeDeg(wd, wm, ws) {
+  //I kept making notes in this function because it made me mad LOL
   var outwrite;
   if (ws == 0) {
     //second's value is 0
@@ -39,6 +40,10 @@ function writeDeg(wd, wm, ws) {
     } else {
       //second's value is 0, but minute's isn't
       if (wd == 0) {
+        //only minute's value isn't 0
+        outwrite = wm + "′";
+      } else {
+        //only second's value is 0
         outwrite = wd + "°" + wm + "′";
       }
     }
@@ -46,6 +51,22 @@ function writeDeg(wd, wm, ws) {
     //second's value isn't 0
     if (wm == 0) {
       //second's value isn't 0, but minute's is
+      if (wd == 0) {
+        //only second's value isn't 0
+        outwrite = ws + "″";
+      } else {
+        //only minute's value is 0
+        outwrite = wd + "°" + ws + "″";
+      }
+    } else {
+      //neither second nor minute's value is 0
+      if (wd == 0) {
+        //only degree's value is 0
+        outwrite = wm + "′" + ws + "″";
+      } else {
+        //none of degree, minute or second's value is 0
+        outwrite = wd + "°" + wm + "′" + ws + "″";
+      }
     }
   }
   return outwrite;
