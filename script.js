@@ -1,10 +1,13 @@
 function degAdd() {
   var addDeg =
-    document.getElementById("addDegA") + document.getElementById("addDegB");
+    parseInt(document.getElementById("addDegA").value) +
+    parseInt(document.getElementById("addDegB").value);
   var addMin =
-    document.getElementById("addMinA") + document.getElementById("addMinB");
+    parseInt(document.getElementById("addMinA").value) +
+    parseInt(document.getElementById("addMinB").value);
   var addSec =
-    document.getElementById("addSecA") + document.getElementById("addSecB");
+    parseInt(document.getElementById("addSecA").value) +
+    parseInt(document.getElementById("addSecB").value);
   if (addSec >= 60) {
     addSec -= 60;
     addMin += 1;
@@ -18,7 +21,6 @@ function degAdd() {
     addMin,
     addSec
   );
-  console.log(addDeg + addMin + addSec);
 }
 
 function writeDeg(wd, wm, ws) {
@@ -35,10 +37,16 @@ function writeDeg(wd, wm, ws) {
         outwrite = wd + "°";
       }
     } else {
-      //only second's value is 0
-      outwrite = wd + "°" + wm + "′";
+      //second's value is 0, but minute's isn't
+      if (wd == 0) {
+        outwrite = wd + "°" + wm + "′";
+      }
+    }
+  } else {
+    //second's value isn't 0
+    if (wm == 0) {
+      //second's value isn't 0, but minute's is
     }
   }
-  console.log(outwrite + wm + ws);
   return outwrite;
 }
