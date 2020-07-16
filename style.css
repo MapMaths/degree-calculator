@@ -3,14 +3,14 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  background-color: #3787ff;
 }
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: white;
 }
 input {
   width: 50px;
-  text-shadow:;
-  border-radius
+  border-radius: 7px;
 }
