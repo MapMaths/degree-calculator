@@ -18,5 +18,5 @@ input {
   border: inset;
   background-color: white;
   border-radius: 7px;
-  width: 50px;
+  border-width: 2px;
 }

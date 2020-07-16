@@ -69,5 +69,6 @@ function writeDeg(wd, wm, ws) {
       }
     }
   }
+  console.log(outwrite);
   return outwrite;
 }
