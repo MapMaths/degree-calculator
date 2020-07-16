@@ -13,19 +13,33 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
     <meta property="og:type" content="calculator" />
-    <meta property="og:description" content="Calculate degrees with add (for now)." />
+    <meta
+      property="og:description"
+      content="Calculate degrees with add (for now)."
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.com/741e4e18-95a1-43bb-b908-1b23a5082f0a%2Ffavicon.ico?v=1594824132469"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <h1>Degree Calculator</h1>
     <h2>
       Degree Add Claculator
     </h2>
-    <input type="number" id="adddega" value="0" />°
-    <input type="number" id="addmina" value="0" />′
-    <input type="number" id="addseca" value="0" />″+
-    <input type="number" id="adddegb" value="0" />°
-    <input type="number" id="addminb" value="0" />′
-    <input type="number" id="addsecb" value="0" />″=<span id="result">0</span>
+    <form oninput="degadd()">
+      <input type="number" id="adddega" value="0" min="0" />°
+      <input type="number" id="addmina" value="0" min="0" max="59" />′
+      <input type="number" id="addseca" value="0" min="0" max="59" />″+
+      <input type="number" id="adddegb" value="0" min="0" />°
+      <input type="number" id="addminb" value="0" min="0" max="59" />′
+      <input type="number" id="addsecb" value="0" min="0" max="59" />″=<span
+        id="result"
+        >0
+      </span>
+    </form>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
