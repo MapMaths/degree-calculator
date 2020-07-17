@@ -16,15 +16,22 @@ function degAdd() {
     addMin -= 60;
     addDeg += 1;
   }
-  document.getElementById("addResult").innerHTML = writeDeg(
-    addDeg,
-    addMin,
-    addSec
-  );
+  var addPrint = writeDeg(addDeg, addMin, addSec);
+  document.getElementById("addResult").innerHTML = addPrint;
   console.log(
     document.getElementById("addDegA").value +
       "°" +
-      document.getElementById("addMinA").value
+      document.getElementById("addMinA").value +
+      "′" +
+      document.getElementById("addSecA").value +
+      "″" +
+      document.getElementById("addDegB").value +
+      "°" +
+      document.getElementById("addMinB").value +
+      "′" +
+      document.getElementById("addSecB").value +
+      "″ = " +
+      addPrint
   );
 }
 
