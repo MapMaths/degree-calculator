@@ -21,6 +21,11 @@ function degAdd() {
     addMin,
     addSec
   );
+  console.log(
+    document.getElementById("addDegA").value +
+      "°" +
+      document.getElementById("addMinA").value
+  );
 }
 
 function writeDeg(wd, wm, ws) {

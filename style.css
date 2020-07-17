@@ -9,12 +9,35 @@ h1 {
   color: white;
 }
 
+h2 {
+  color: white;
+}
+
 input {
-  width: 50px;
+  width: 40px;
   border-radius: 7px;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 #addResult {
+  color: initial;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
   background-color: white;
-  color: black;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  width: 40px;
+  border-radius: 7px;
+  cursor: defalt;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
