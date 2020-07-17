@@ -40,36 +40,36 @@ function degAdd() {
   var minDeg =
     parseInt(document.getElementById("minDegA").value) -
     parseInt(document.getElementById("minDegB").value);
-  var addMin =
+  var minMin =
     parseInt(document.getElementById("minMinA").value) -
     parseInt(document.getElementById("minMinB").value);
-  var addSec =
+  var minSec =
     parseInt(document.getElementById("minSecA").value) -
     parseInt(document.getElementById("minSecB").value);
-  while (addSec >= 60) {
-    addSec -= 60;
-    addMin += 1;
+  while (minSec <= 0) {
+    minSec -= 60;
+    minMin += 1;
   }
-  while (addMin >= 60) {
-    addMin -= 60;
-    addDeg += 1;
+  while (minMin <= 0) {
+    minMin -= 60;
+    minDeg += 1;
   }
-  var addPrint = writeDeg(addDeg, addMin, addSec);
-  document.getElementById("addResult").innerHTML = addPrint;
+  var minPrint = writeDeg(minDeg, minMin, minSec);
+  document.getElementById("minResult").innerHTML = minPrint;
   console.log(
-    document.getElementById("addDegA").value +
+    document.getElementById("minDegA").value +
       "°" +
-      document.getElementById("addMinA").value +
+      document.getElementById("minMinA").value +
       "′" +
-      document.getElementById("addSecA").value +
+      document.getElementById("minSecA").value +
       "″" +
-      document.getElementById("addDegB").value +
+      document.getElementById("minDegB").value +
       "°" +
-      document.getElementById("addMinB").value +
+      document.getElementById("minMinB").value +
       "′" +
-      document.getElementById("addSecB").value +
+      document.getElementById("minSecB").value +
       "″ = " +
-      addPrint
+      minPrint
   );
 }
 */
