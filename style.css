@@ -14,7 +14,7 @@ h2 {
 }
 
 input {
-  width: 40px;
+  width: 45px;
   border-radius: 7px;
   margin-block-start: 0.1em;
   margin-block-end: 0.1em;
@@ -22,7 +22,7 @@ input {
   margin-inline-end: 0px;
 }
 
-#addResult {
+.like-input {
   color: initial;
   text-shadow: none;
   display: inline-block;
@@ -33,7 +33,7 @@ input {
   padding: 1px 0px;
   border-width: 2px;
   border-style: inset;
-  width: 40px;
+  width: 60px;
   border-radius: 7px;
   cursor: defalt;
   margin-block-start: 0.1em;

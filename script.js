@@ -24,19 +24,18 @@ function degAdd() {
       document.getElementById("addMinA").value +
       "′" +
       document.getElementById("addSecA").value +
-      "″" +
+      "″+" +
       document.getElementById("addDegB").value +
       "°" +
       document.getElementById("addMinB").value +
       "′" +
       document.getElementById("addSecB").value +
-      "″ = " +
+      "″=" +
       addPrint
   );
 }
 
-/*improving
-  function degMin() {
+function degMin() {
   var minDeg =
     parseInt(document.getElementById("minDegA").value) -
     parseInt(document.getElementById("minDegB").value);
@@ -46,13 +45,13 @@ function degAdd() {
   var minSec =
     parseInt(document.getElementById("minSecA").value) -
     parseInt(document.getElementById("minSecB").value);
-  while (minSec <= 0) {
-    minSec -= 60;
-    minMin += 1;
+  while (minSec < 0) {
+    minSec += 60;
+    minMin -= 1;
   }
-  while (minMin <= 0) {
-    minMin -= 60;
-    minDeg += 1;
+  while (minMin < 0) {
+    minMin += 60;
+    minDeg -= 1;
   }
   var minPrint = writeDeg(minDeg, minMin, minSec);
   document.getElementById("minResult").innerHTML = minPrint;
@@ -62,17 +61,16 @@ function degAdd() {
       document.getElementById("minMinA").value +
       "′" +
       document.getElementById("minSecA").value +
-      "″" +
+      "″-" +
       document.getElementById("minDegB").value +
       "°" +
       document.getElementById("minMinB").value +
       "′" +
       document.getElementById("minSecB").value +
-      "″ = " +
+      "″=" +
       minPrint
   );
 }
-*/
 
 function writeDeg(wd, wm, ws) {
   //I kept making notes in this function because it made me mad LOL
