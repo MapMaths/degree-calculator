@@ -8,11 +8,11 @@ function degAdd() {
   var addSec =
     parseInt(document.getElementById("addSecA").value) +
     parseInt(document.getElementById("addSecB").value);
-  if (addSec >= 60) {
+  while (addSec >= 60) {
     addSec -= 60;
     addMin += 1;
   }
-  if (addMin >= 60) {
+  while (addMin >= 60) {
     addMin -= 60;
     addDeg += 1;
   }
@@ -34,6 +34,45 @@ function degAdd() {
       addPrint
   );
 }
+
+/*improving
+  function degMin() {
+  var minDeg =
+    parseInt(document.getElementById("minDegA").value) -
+    parseInt(document.getElementById("minDegB").value);
+  var addMin =
+    parseInt(document.getElementById("minMinA").value) -
+    parseInt(document.getElementById("minMinB").value);
+  var addSec =
+    parseInt(document.getElementById("minSecA").value) -
+    parseInt(document.getElementById("minSecB").value);
+  while (addSec >= 60) {
+    addSec -= 60;
+    addMin += 1;
+  }
+  while (addMin >= 60) {
+    addMin -= 60;
+    addDeg += 1;
+  }
+  var addPrint = writeDeg(addDeg, addMin, addSec);
+  document.getElementById("addResult").innerHTML = addPrint;
+  console.log(
+    document.getElementById("addDegA").value +
+      "°" +
+      document.getElementById("addMinA").value +
+      "′" +
+      document.getElementById("addSecA").value +
+      "″" +
+      document.getElementById("addDegB").value +
+      "°" +
+      document.getElementById("addMinB").value +
+      "′" +
+      document.getElementById("addSecB").value +
+      "″ = " +
+      addPrint
+  );
+}
+*/
 
 function writeDeg(wd, wm, ws) {
   //I kept making notes in this function because it made me mad LOL
