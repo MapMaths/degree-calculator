@@ -12,6 +12,7 @@ Thank [@sea-horizon](https://glitch.com/@sea-horion) for helping me.
 # Use
 
 ## Add Calculator
+Input the integers up to 0, and it will calculate the sum of the two degree numbers.
 
 ## Made by [Glitch](https://glitch.com/)
 
