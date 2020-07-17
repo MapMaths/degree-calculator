@@ -16,7 +16,7 @@ function degAdd() {
     addMin -= 60;
     addDeg += 1;
   }
-  document.getElementById("result").innerHTML = writeDeg(
+  document.getElementById("addResult").innerHTML = writeDeg(
     addDeg,
     addMin,
     addSec
@@ -69,6 +69,5 @@ function writeDeg(wd, wm, ws) {
       }
     }
   }
-  console.log(outwrite);
   return outwrite;
 }

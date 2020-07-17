@@ -14,9 +14,7 @@ input {
   border-radius: 7px;
 }
 
-#result {
-  border: inset;
+#addResult {
   background-color: white;
-  border-radius: 7px;
-  border-width: 2px;
+  color: black;
 }
