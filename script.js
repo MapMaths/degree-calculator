@@ -53,6 +53,7 @@ function degMin() {
     minMin += 60;
     minDeg -= 1;
   }
+  if (minDeg
   var minPrint = writeDeg(minDeg, minMin, minSec);
   document.getElementById("minResult").innerHTML = minPrint;
   console.log(
