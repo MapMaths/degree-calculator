@@ -8,6 +8,8 @@ h1 {
   font-style: italic;
   color: white;
   -webkit-text-stroke: 1.5px black;
+  border-color: black;
+  border-width: 2px;
 }
 
 h2 {
@@ -43,7 +45,6 @@ input {
   font: 400 13.3333px Arial;
   padding: 1px 0px;
   border-width: 2px;
-  border-style: inset;
   width: 60px;
   border-radius: 7px;
   cursor: text;
@@ -52,10 +53,6 @@ input {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding: 1px 2px;
-  border-color: -internal-light-dark-color(
-    rgb(118, 118, 118),
-    rgb(195, 195, 195)
-  );
   border: solid;
   border-width: 2px;
 }
