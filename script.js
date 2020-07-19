@@ -1,7 +1,3 @@
-function overStyle(){
-  
-}
-
 function degAdd() {
   var addDeg =
     parseInt(document.getElementById("addDegA").value) +
