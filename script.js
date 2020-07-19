@@ -123,3 +123,4 @@ function writeDeg(wd, wm, ws) {
   }
   return outwrite;
 }
+document.getElementsByTagName

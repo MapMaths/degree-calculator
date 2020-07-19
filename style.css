@@ -26,6 +26,7 @@ input {
     rgb(118, 118, 118),
     rgb(195, 195, 195)
   );
+  border: solid;
 }
 
 .like-input {
@@ -51,4 +52,5 @@ input {
     rgb(118, 118, 118),
     rgb(195, 195, 195)
   );
+  border: solid;
 }
