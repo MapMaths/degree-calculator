@@ -20,7 +20,7 @@
     <link
       id="favicon"
       rel="icon"
-      href="https://cdn.glitch.com/741e4e18-95a1-43bb-b908-1b23a5082f0a%2Ffavicon.ico?v=1594824132469"
+      href="https://cdn.glitch.com/project-avatar/741e4e18-95a1-43bb-b908-1b23a5082f0a.png?1594822702661"
       type="image/x-icon"
     />
   </head>
@@ -32,11 +32,16 @@
       Degree Add Calculator
     </h2>
     <form oninput="degAdd()">
-      <input type="number" id="addDegA" value="0" min="0" />°
-      <input type="number" id="addMinA" value="0" min="0" />′
-      <input type="number" id="addSecA" value="0" min="0" />″+
-      <input type="number" id="addDegB" value="0" min="0" />°
-      <input type="number" id="addMinB" value="0" min="0" />′
+      <input type="number" id="addDegA" value="0" min="0" max="21600" />°
+      <input type="number" id="addMinA" value="0" min="0" max="3600" />′
+      <input type="number" id="addSecA" value="0" min="0" max="3600" />″+
+      <input
+        type="number"
+        id="addDegB"
+        value="0"
+        min="0"
+        max="3600000000000"
+      />° <input type="number" id="addMinB" value="0" min="0" />′
       <input type="number" id="addSecB" value="0" min="0" />″=
       <span id="addResult" class="like-input">0°</span>
     </form>
