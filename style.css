@@ -27,6 +27,7 @@ input {
     rgb(195, 195, 195)
   );
   border: solid;
+  font-style: bold;
 }
 
 .like-input {
@@ -42,7 +43,7 @@ input {
   border-style: inset;
   width: 60px;
   border-radius: 7px;
-  cursor: defalt;
+  cursor: text;
   margin-block-start: 0.1em;
   margin-block-end: 0.1em;
   margin-inline-start: 0px;
