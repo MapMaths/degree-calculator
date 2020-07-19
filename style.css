@@ -7,11 +7,12 @@ body {
 h1 {
   font-style: italic;
   color: white;
-  -webkit-text-stroke: 1px red;
+  -webkit-text-stroke: 1.5px black;
 }
 
 h2 {
   color: white;
+  -webkit-text-stroke: 1.2px black;
 }
 
 input {
@@ -29,6 +30,7 @@ input {
   );
   border: solid;
   font-style: bold;
+  border-width: 2px;
 }
 
 .like-input {
@@ -55,4 +57,5 @@ input {
     rgb(195, 195, 195)
   );
   border: solid;
+  border-width: 2px;
 }
