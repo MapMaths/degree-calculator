@@ -1,3 +1,7 @@
+function overStyle(){
+  
+}
+
 function degAdd() {
   var addDeg =
     parseInt(document.getElementById("addDegA").value) +
@@ -123,4 +127,3 @@ function writeDeg(wd, wm, ws) {
   }
   return outwrite;
 }
-document.getElementsByTagName
