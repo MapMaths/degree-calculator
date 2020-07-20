@@ -24,13 +24,11 @@ input {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding: 1px 2px;
-  color: -internal-light-dark-color(black, white);
   border-color: -internal-light-dark-color(
     rgb(118, 118, 118),
     rgb(195, 195, 195)
   );
   border: solid;
-  font-style: bold;
   border-width: 2px;
 }
 
