@@ -53,6 +53,26 @@ function degMin() {
     minMin += 60;
     minDeg -= 1;
   }
+  if (minDeg < 0) {
+    var minDeg =
+      parseInt(document.getElementById("minDegB").value) -
+      parseInt(document.getElementById("minDegA").value);
+    var minMin =
+      parseInt(document.getElementById("minMinB").value) -
+      parseInt(document.getElementById("minMinA").value);
+    var minSec =
+      parseInt(document.getElementById("minSecB").value) -
+      parseInt(document.getElementById("minSecA").value);
+    while (minSec >= 60) {
+      minSec -= 60;
+      minMin += 1;
+    }
+    while (minMin >= 60) {
+      minMin -= 60;
+      minDeg += 1;
+    }
+    minDeg
+  }
   var minPrint = writeDeg(minDeg, minMin, minSec);
   document.getElementById("minResult").innerHTML = minPrint;
   console.log(
@@ -154,9 +174,6 @@ function writeDeg(wd, wm, ws) {
         outwrite = wd + "°" + wm + "′" + ws + "″";
       }
     }
-  }
-  if (wd < 0) {
-    outwrite = undefined;
   }
   return outwrite;
 }
