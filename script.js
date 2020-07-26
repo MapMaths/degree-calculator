@@ -72,6 +72,43 @@ function degMin() {
   );
 }
 
+function degTim() {
+  var timDeg =
+    parseInt(document.getElementById("timDegA").value) *
+    parseInt(document.getElementById("timDegB").value);
+  var timMin =
+    parseInt(document.getElementById("timMinA").value) *
+    parseInt(document.getElementById("timMinB").value);
+  var timSec =
+    parseInt(document.getElementById("timSecA").value) *
+    parseInt(document.getElementById("timSecB").value);
+  while (timSec >= 60) {
+    timSec -= 60;
+    timMin += 1;
+  }
+  while (timMin >= 60) {
+    timMin -= 60;
+    timDeg += 1;
+  }
+  var timPrint = writeDeg(timDeg, timMin, timSec);
+  document.getElementById("timResult").innerHTML = timPrint;
+  console.log(
+    document.getElementById("timDegA").value +
+      "°" +
+      document.getElementById("timMinA").value +
+      "′" +
+      document.getElementById("timSecA").value +
+      "″-" +
+      document.getElementById("timDegB").value +
+      "°" +
+      document.getElementById("timMinB").value +
+      "′" +
+      document.getElementById("timSecB").value +
+      "″=" +
+      timPrint
+  );
+}
+
 function writeDeg(wd, wm, ws) {
   //I kept making notes in this function because it made me mad LOL
   var outwrite;
