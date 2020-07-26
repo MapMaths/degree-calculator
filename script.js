@@ -71,7 +71,7 @@ function degMin() {
       minMin -= 60;
       minDeg += 1;
     }
-    minDeg
+    minDeg *= -1;
   }
   var minPrint = writeDeg(minDeg, minMin, minSec);
   document.getElementById("minResult").innerHTML = minPrint;
