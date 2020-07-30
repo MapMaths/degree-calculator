@@ -1,9 +1,9 @@
 # Welcome to Degree Calculator
 
-This is a Degree Calculator, with an HTML file.
-Input your degrees and do the calculatings.
+Degree calculator
+Within Add, Subtract and Multiplication.
 
-#### **The answers will be saved in console.**
+**The answers will be saved in console.**
 
 # Thanks
 
@@ -18,6 +18,10 @@ Input the integers up to 0, and it will calculate the sum of the two degree numb
 ## Subtract Calculator
 
 Input the integers up to 0, and it will calculate the difference of the two degree numbers.
+
+## Multiplication Calculator
+
+Input the integers up to 0, and it will calculate the product of the two degree numbers.
 
 ## Made by [Glitch](https://glitch.com/)
 
