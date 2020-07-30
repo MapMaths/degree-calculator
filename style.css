@@ -2,6 +2,15 @@ body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
   background-color: #3787ff;
+  background: rgb(0, 212, 255);
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(55, 135, 255, 1) 5%,
+    rgba(55, 135, 255, 1) 95%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 h1 {
@@ -63,4 +72,8 @@ section {
   margin: 10px;
 }
 
-hr
+hr {
+  border-color: white;
+  border-style: solid;
+  margin: 20px;
+}
