@@ -22,7 +22,3 @@ Input the integers up to 0, and it will calculate the difference of the two degr
 ## Multiplication Calculator
 
 Input the integers up to 0, and it will calculate the product of the two degree numbers.
-
-## Made by [Glitch](https://glitch.com/)
-
-\ ゜ o ゜)ノ
